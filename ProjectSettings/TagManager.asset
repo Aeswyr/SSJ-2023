@@ -11,12 +11,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - world
+  - entity
+  - interactable
+  - interact
+  - hurtbox
+  - hitbox
   - 
   - 
   - 
