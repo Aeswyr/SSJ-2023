@@ -32,7 +32,7 @@ ScriptedImporter:
     sRGBTexture: 1
     spriteMode: 2
     spriteExtrude: 1
-    spriteMeshType: 1
+    spriteMeshType: 0
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
     spritePixelsToUnits: 8
@@ -76,11 +76,11 @@ ScriptedImporter:
     layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
-    customPivotPosition: {x: 0.5, y: 0.5}
-    spritePadding: 0
+    customPivotPosition: {x: 0.5, y: 0}
+    spritePadding: 2
     generateModelPrefab: 1
     generateAnimationClips: 1
-    addSortingGroup: 1
+    addSortingGroup: 0
     addShadowCasters: 0
   asepriteImporterSettings:
     fileImportMode: 1
@@ -88,14 +88,14 @@ ScriptedImporter:
     layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
-    customPivotPosition: {x: 0.5, y: 0.5}
-    spritePadding: 0
+    customPivotPosition: {x: 0.5, y: 0}
+    spritePadding: 2
     generateModelPrefab: 1
     generateAnimationClips: 1
-    addSortingGroup: 1
+    addSortingGroup: 0
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638273923974703656
+  platformSettingsDirtyTick: 638275634865002817
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: alchemist_Frame_0
     originalName: 
-    pivot: {x: 0.44, y: 0}
+    pivot: {x: 0.39999998, y: 0}
     alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 1, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 36
       y: 4
       width: 25
-      height: 25
+      height: 26
     spriteID: d3904c0ab8ce12b4fa27d3af05c6750f
     spriteBone: []
     spriteOutline: []
@@ -141,15 +141,15 @@ ScriptedImporter:
     uvTransform: {x: 36, y: 4}
   - name: alchemist_Frame_1
     originalName: 
-    pivot: {x: 0.44, y: 0}
+    pivot: {x: 0.39999998, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 36
-      y: 137
+      y: 141
       width: 25
-      height: 24
+      height: 25
     spriteID: c2cd7c922541e034689fee6db0e7dbe1
     spriteBone: []
     spriteOutline: []
@@ -158,18 +158,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 36, y: 137}
+    uvTransform: {x: 36, y: 141}
   - name: alchemist_Frame_2
     originalName: 
-    pivot: {x: 0.44, y: 0}
+    pivot: {x: 0.39999998, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 36
-      y: 37
+      y: 38
       width: 25
-      height: 25
+      height: 26
     spriteID: 485b38eb499b6e343a92996d5a3e4948
     spriteBone: []
     spriteOutline: []
@@ -178,18 +178,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 36, y: 37}
+    uvTransform: {x: 36, y: 38}
   - name: alchemist_Frame_3
     originalName: 
-    pivot: {x: 0.44, y: 0}
+    pivot: {x: 0.39999998, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 36
-      y: 70
+      y: 72
       width: 25
-      height: 25
+      height: 26
     spriteID: 7296d27d3f9b04b45aeb0b0d4492070c
     spriteBone: []
     spriteOutline: []
@@ -198,18 +198,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 36, y: 70}
+    uvTransform: {x: 36, y: 72}
   - name: alchemist_Frame_4
     originalName: 
-    pivot: {x: 0.45833334, y: 0}
+    pivot: {x: 0.4166667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 36
-      y: 169
+      y: 207
       width: 24
-      height: 25
+      height: 26
     spriteID: 5374690489aec78458d97fa6f6522b64
     spriteBone: []
     spriteOutline: []
@@ -218,18 +218,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 36, y: 169}
+    uvTransform: {x: 36, y: 207}
   - name: alchemist_Frame_5
     originalName: 
-    pivot: {x: 0.45833334, y: 0}
+    pivot: {x: 0.4166667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 40
+      y: 41
       width: 24
-      height: 27
+      height: 28
     spriteID: a1dffc51399379747ba1e448868972d0
     spriteBone: []
     spriteOutline: []
@@ -238,10 +238,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 40}
+    uvTransform: {x: 4, y: 41}
   - name: alchemist_Frame_6
     originalName: 
-    pivot: {x: 0.45833334, y: 0}
+    pivot: {x: 0.4166667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -249,7 +249,7 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 24
-      height: 28
+      height: 29
     spriteID: 4f79520519f5f614c9f43f0136db551e
     spriteBone: []
     spriteOutline: []
@@ -261,15 +261,15 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: alchemist_Frame_7
     originalName: 
-    pivot: {x: 0.45833334, y: 0}
+    pivot: {x: 0.4166667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 36
-      y: 103
+      y: 106
       width: 24
-      height: 26
+      height: 27
     spriteID: 277daf56d5de6484fbb7f5616b845522
     spriteBone: []
     spriteOutline: []
@@ -278,18 +278,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 36, y: 103}
+    uvTransform: {x: 36, y: 106}
   - name: alchemist_Frame_8
     originalName: 
-    pivot: {x: 0.45833334, y: 0}
+    pivot: {x: 0.4166667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 75
+      y: 77
       width: 24
-      height: 24
+      height: 25
     spriteID: e87a0fde22b7ece44a2310265d3ffb2a
     spriteBone: []
     spriteOutline: []
@@ -298,18 +298,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 75}
+    uvTransform: {x: 4, y: 77}
   - name: alchemist_Frame_9
     originalName: 
-    pivot: {x: 0.45833334, y: 0}
+    pivot: {x: 0.4166667, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 107
+      y: 110
       width: 24
-      height: 24
+      height: 25
     spriteID: 3e245e83b04fdaa468fc7b77c175aeae
     spriteBone: []
     spriteOutline: []
@@ -318,18 +318,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 107}
+    uvTransform: {x: 4, y: 110}
   - name: alchemist_Frame_10
     originalName: 
-    pivot: {x: 0.44, y: 0}
+    pivot: {x: 0.39999998, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 36
-      y: 202
+      y: 174
       width: 25
-      height: 24
+      height: 25
     spriteID: 41594c39475baa04ba847ae5f2dc46bf
     spriteBone: []
     spriteOutline: []
@@ -338,8 +338,728 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 36, y: 202}
-  spriteSheetImportData: []
+    uvTransform: {x: 36, y: 174}
+  - name: alchemist_Frame_11
+    originalName: 
+    pivot: {x: 0.5416667, y: -0.041666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 143
+      width: 24
+      height: 24
+    spriteID: 338c21c7e0e9b2840ae522a1aedb68b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 143}
+  - name: alchemist_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: -0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 195
+      y: 4
+      width: 26
+      height: 21
+    spriteID: a7f02f23b8e3fb147995ce4bbdcdf2d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 195, y: 4}
+  - name: alchemist_Frame_13
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 4
+      width: 23
+      height: 24
+    spriteID: 4e8bd584978f64e4faeeed4357eefe38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 4}
+  - name: alchemist_Frame_14
+    originalName: 
+    pivot: {x: 0.54545456, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 72
+      width: 22
+      height: 25
+    spriteID: bcb9397220248de48bca7c15f00754e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 72}
+  - name: alchemist_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: -0.08695652}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 4
+      width: 24
+      height: 23
+    spriteID: 62e5fadcfb1a8204c970b209c92153e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 4}
+  - name: alchemist_Frame_16
+    originalName: 
+    pivot: {x: 0.48, y: -0.09090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 4
+      width: 25
+      height: 22
+    spriteID: 943ec980bd0ecce48873af9481b553ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 4}
+  - name: alchemist_Frame_17
+    originalName: 
+    pivot: {x: 0.5217391, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 36
+      width: 23
+      height: 24
+    spriteID: 6b0da7677c428a64a93798ccde6936b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 36}
+  - name: alchemist_Frame_18
+    originalName: 
+    pivot: {x: 0.6818182, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 175
+      width: 22
+      height: 26
+    spriteID: 8d57fda55939e9545aefdfd032c7e56d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 175}
+  - name: alchemist_Frame_19
+    originalName: 
+    pivot: {x: 0.6818182, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 209
+      width: 22
+      height: 26
+    spriteID: c0625d3a66b71f947af29aee9cd6ca8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 209}
+  - name: alchemist_Frame_20
+    originalName: 
+    pivot: {x: 0.6666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 105
+      width: 21
+      height: 26
+    spriteID: fb41d12a596d7154b800ee97614f5817
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 105}
+  - name: alchemist_Frame_21
+    originalName: 
+    pivot: {x: 0.65000004, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 68
+      width: 20
+      height: 26
+    spriteID: 86328b5911fb8a1458613591fc0c5c02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 68}
+  - name: alchemist_Frame_22
+    originalName: 
+    pivot: {x: 0.6666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 139
+      width: 21
+      height: 26
+    spriteID: e4f0ddcb83e170e469ea29057d04c738
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 139}
+  - name: alchemist_Frame_23
+    originalName: 
+    pivot: {x: 0.45000002, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 173
+      width: 20
+      height: 27
+    spriteID: 22b2bd8b222477744af625d5f8ee9fd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 173}
+  - name: alchemist_Frame_24
+    originalName: 
+    pivot: {x: 0.42105263, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 208
+      width: 19
+      height: 28
+    spriteID: 21e9f6d706c14ae4a90cae0ad8bb2c21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 208}
+  - name: alchemist_Frame_25
+    originalName: 
+    pivot: {x: 0.3888889, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 136
+      width: 18
+      height: 27
+    spriteID: 4387135db23baa24ea436be7433e4b06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 136}
+  - name: alchemist_Frame_26
+    originalName: 
+    pivot: {x: 0.47368422, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 102
+      width: 19
+      height: 26
+    spriteID: 4adaaccdaf7a1d645a03b4030e45ff56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 102}
+  - name: alchemist_Frame_27
+    originalName: 
+    pivot: {x: 0.6363636, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 4
+      width: 22
+      height: 26
+    spriteID: 70e28ca982c0efb41b846866a6526af8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 4}
+  - name: alchemist_Frame_28
+    originalName: 
+    pivot: {x: 0.6818182, y: -0.03846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 38
+      width: 22
+      height: 26
+    spriteID: f8c7c7db6de6ec6458f87b7e33200baa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 38}
+  spriteSheetImportData:
+  - name: alchemist_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 224
+      width: 32
+      height: 32
+    spriteID: 1be89a0e8934e3f459c2fe7d4798bef7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 224
+      width: 32
+      height: 32
+    spriteID: df8e80cc4a2057e4ca603c124c3e658f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 192
+      width: 32
+      height: 32
+    spriteID: a06c97df2cd23fb4a8419d5e061ff097
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 192
+      width: 32
+      height: 32
+    spriteID: ff774ae16faa7ba44b51134c2b964ecd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 2b21f2f2d4fa5b64d88f8caccc8fad8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 160
+      width: 32
+      height: 32
+    spriteID: 09573bcc8cd660b498b1e83ee7630391
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 128
+      width: 32
+      height: 32
+    spriteID: b3614921edb630945b8c67d28145e65f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 128
+      width: 32
+      height: 32
+    spriteID: 4de839e7bcadcfb4eab26a74af1ff176
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 96
+      width: 32
+      height: 32
+    spriteID: a848b79f115bed041abf8f8677196b1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 96
+      width: 32
+      height: 32
+    spriteID: 03c27f669bcca1c4dbd4da96f339e53c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 5a6485e48fbe4584abe6bbb4abfba766
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 64
+      width: 32
+      height: 32
+    spriteID: 75ab58074509af64c86ba315ff33b275
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 32
+      width: 32
+      height: 32
+    spriteID: b86b9eba55c065a45bd019618a5d2a7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 32
+      height: 32
+    spriteID: 1c24d7d3611dec84288cd77b87d9d436
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 5da7d0a57fc8c834f9887f4321a0a7f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 6cbf293324a12534f94445e3acf15f84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 0
+      width: 32
+      height: 32
+    spriteID: fdd24c8bf81ad3245905dba072769cb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: alchemist_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 0
+      width: 32
+      height: 32
+    spriteID: 62e0950092280144781f83fa68d30c85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
     guid: -222581518
@@ -351,91 +1071,235 @@ ScriptedImporter:
     - name: alchemist_Frame_0
       frameIndex: 0
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 25
-        height: 25
+        width: 23
+        height: 24
       spriteId: d3904c0ab8ce12b4fa27d3af05c6750f
     - name: alchemist_Frame_1
       frameIndex: 1
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 25
-        height: 24
+        width: 23
+        height: 23
       spriteId: c2cd7c922541e034689fee6db0e7dbe1
     - name: alchemist_Frame_2
       frameIndex: 2
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 25
-        height: 25
+        width: 23
+        height: 24
       spriteId: 485b38eb499b6e343a92996d5a3e4948
     - name: alchemist_Frame_3
       frameIndex: 3
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 25
-        height: 25
+        width: 23
+        height: 24
       spriteId: 7296d27d3f9b04b45aeb0b0d4492070c
     - name: alchemist_Frame_4
       frameIndex: 4
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 24
-        height: 25
+        width: 22
+        height: 24
       spriteId: 5374690489aec78458d97fa6f6522b64
     - name: alchemist_Frame_5
       frameIndex: 5
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 24
-        height: 27
+        width: 22
+        height: 26
       spriteId: a1dffc51399379747ba1e448868972d0
     - name: alchemist_Frame_6
       frameIndex: 6
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 24
-        height: 28
+        width: 22
+        height: 27
       spriteId: 4f79520519f5f614c9f43f0136db551e
     - name: alchemist_Frame_7
       frameIndex: 7
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 24
-        height: 26
+        width: 22
+        height: 25
       spriteId: 277daf56d5de6484fbb7f5616b845522
     - name: alchemist_Frame_8
       frameIndex: 8
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 24
-        height: 24
+        width: 22
+        height: 23
       spriteId: e87a0fde22b7ece44a2310265d3ffb2a
     - name: alchemist_Frame_9
       frameIndex: 9
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 24
-        height: 24
+        width: 22
+        height: 23
       spriteId: 3e245e83b04fdaa468fc7b77c175aeae
     - name: alchemist_Frame_10
       frameIndex: 10
       cellRect:
-        x: 5
+        x: 6
         y: 0
-        width: 25
-        height: 24
+        width: 23
+        height: 23
       spriteId: 41594c39475baa04ba847ae5f2dc46bf
+    - name: alchemist_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 3
+        y: 1
+        width: 22
+        height: 22
+      spriteId: 338c21c7e0e9b2840ae522a1aedb68b1
+    - name: alchemist_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 3
+        y: 3
+        width: 24
+        height: 19
+      spriteId: a7f02f23b8e3fb147995ce4bbdcdf2d8
+    - name: alchemist_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 4
+        y: 0
+        width: 21
+        height: 22
+      spriteId: 4e8bd584978f64e4faeeed4357eefe38
+    - name: alchemist_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 4
+        y: 0
+        width: 20
+        height: 23
+      spriteId: bcb9397220248de48bca7c15f00754e1
+    - name: alchemist_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 4
+        y: 2
+        width: 22
+        height: 21
+      spriteId: 62e5fadcfb1a8204c970b209c92153e2
+    - name: alchemist_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 4
+        y: 2
+        width: 23
+        height: 20
+      spriteId: 943ec980bd0ecce48873af9481b553ea
+    - name: alchemist_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 4
+        y: 0
+        width: 21
+        height: 22
+      spriteId: 6b0da7677c428a64a93798ccde6936b1
+    - name: alchemist_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 1
+        y: 0
+        width: 20
+        height: 24
+      spriteId: 8d57fda55939e9545aefdfd032c7e56d
+    - name: alchemist_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 1
+        y: 0
+        width: 20
+        height: 24
+      spriteId: c0625d3a66b71f947af29aee9cd6ca8b
+    - name: alchemist_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 2
+        y: 0
+        width: 19
+        height: 24
+      spriteId: fb41d12a596d7154b800ee97614f5817
+    - name: alchemist_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 3
+        y: 0
+        width: 18
+        height: 24
+      spriteId: 86328b5911fb8a1458613591fc0c5c02
+    - name: alchemist_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 2
+        y: 0
+        width: 19
+        height: 24
+      spriteId: e4f0ddcb83e170e469ea29057d04c738
+    - name: alchemist_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 7
+        y: 0
+        width: 18
+        height: 25
+      spriteId: 22b2bd8b222477744af625d5f8ee9fd0
+    - name: alchemist_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 8
+        y: 0
+        width: 17
+        height: 26
+      spriteId: 21e9f6d706c14ae4a90cae0ad8bb2c21
+    - name: alchemist_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 9
+        y: 1
+        width: 16
+        height: 25
+      spriteId: 4387135db23baa24ea436be7433e4b06
+    - name: alchemist_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 7
+        y: 2
+        width: 17
+        height: 24
+      spriteId: 4adaaccdaf7a1d645a03b4030e45ff56
+    - name: alchemist_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 2
+        y: 2
+        width: 20
+        height: 24
+      spriteId: 70e28ca982c0efb41b846866a6526af8
+    - name: alchemist_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 1
+        y: 1
+        width: 20
+        height: 24
+      spriteId: f8c7c7db6de6ec6458f87b7e33200baa
     linkedCells: []
     parentIndex: -1
   platformSettings:

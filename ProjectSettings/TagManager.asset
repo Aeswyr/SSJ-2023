@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 1121108449
+    locked: 0
+  - name: entity
+    uniqueID: 2183801893
+    locked: 0
+  - name: world
+    uniqueID: 1612645761
+    locked: 0
+  - name: vfx
+    uniqueID: 1222193487
+    locked: 0
+  - name: ui
+    uniqueID: 1505696035
+    locked: 0
+  - name: foreground
+    uniqueID: 4102816605
+    locked: 0

@@ -64,7 +64,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.5}
+  m_Offset: {x: 0, y: 1.63}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 5260555565163430220}
   - component: {fileID: 7250122174408206639}
   - component: {fileID: 343012245349947211}
+  - component: {fileID: 5807562720130563086}
   - component: {fileID: 6114772427523073210}
   - component: {fileID: 7588718041217758282}
   - component: {fileID: 4978346973153815736}
@@ -348,12 +349,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4095556f17ab5464f82e5cccad6de445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorDetectDistance: 0.5
-  floorDetectOffset: {x: 0, y: 0}
+  floorDetectDistance: 0.005
+  floorDetectOffset: {x: 0, y: 0.125}
   footOffset: {x: 1, y: 0}
   floorDetectMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &5807562720130563086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6442118750948568532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fb37b136055204581060108f7a98e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 7588718041217758282}
+  shaders:
+  - {fileID: 2100000, guid: af47701ccea3f3f4ebd20598b8037437, type: 2}
 --- !u!50 &6114772427523073210
 Rigidbody2D:
   serializedVersion: 4
@@ -419,15 +435,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2111165403
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 6738833921905959984, guid: 1982ddf2f8a80fc49857d25c55b33cf0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.25, y: 0.25}
+  m_Size: {x: 3.125, y: 3.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

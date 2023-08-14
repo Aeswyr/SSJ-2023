@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
 
     private bool grounded, lastGrounded;
 
+    private float jumpsquat = 0.1f;
+    private float jumpsquatTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,17 +31,26 @@ public class PlayerController : MonoBehaviour
         if (InputHandler.Instance.move.pressed) {
             move.StartAcceleration(InputHandler.Instance.dir);
             sprite.flipX = InputHandler.Instance.dir < 0;
+            animator.SetBool("running", true);
         } else if (InputHandler.Instance.move.down) {
             move.UpdateMovement(InputHandler.Instance.dir);
             sprite.flipX = InputHandler.Instance.dir < 0;
+            animator.SetBool("running", true);
         } else {
             move.StartDeceleration();
+            animator.SetBool("running", false);
         }
 
         if (grounded && InputHandler.Instance.jump.pressed) {
             jump.StartJump();
+            grounded = false;
+            jumpsquatTime = Time.time + jumpsquat;
+
+            animator.SetBool("grounded", false);
+
+            animator.SetTrigger("jump");
         }
 
-        animator.SetBool("grounded", grounded);
+        animator.SetBool("grounded", grounded && Time.time > jumpsquatTime);
     }
 }
