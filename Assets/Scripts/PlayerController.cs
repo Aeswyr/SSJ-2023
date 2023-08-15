@@ -70,21 +70,33 @@ public class PlayerController : MonoBehaviour
             int dir = sprite.flipX ? -1 : 1;
             if (InputHandler.Instance.dir != 0)
                 dir = (int)InputHandler.Instance.dir;
-            if (grounded)
+            if (InputHandler.Instance.dir == 0) {
+                // P A R R Y
+            } else if (grounded) {
                 move.OverrideCurve(groundDodgeSpeed, groundedDodge, dir);
-            else {
+                animator.SetTrigger("dodge");
+            } else {
                 VFXManager.Instance.VFXBuilder(VFXManager.VFXType.AIRDASH_PAD, transform.position, flipX: sprite.flipX);
                 canJumpCancel = true;
                 canAirdodge = false;
                 jump.SetGravity(0, true);
                 move.OverrideCurve(airDodgeSpeed, airDodge, dir);
+                animator.SetTrigger("dodge");
             }
-            animator.SetTrigger("dodge");
+            
         } else if (!acting && grounded && InputHandler.Instance.drink.pressed) {
             StartAction();
             move.StartDeceleration();
             animator.SetTrigger("drink");
+        } else if (!acting && InputHandler.Instance.primary.pressed) {
+            StartAction();
+            // ATTACK
+        } else if (!acting && InputHandler.Instance.secondary.pressed) {
+            StartAction();
+            // THROW
         }
+
+
 
         animator.SetBool("grounded", grounded);
     }
