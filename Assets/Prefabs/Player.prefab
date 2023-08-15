@@ -212,6 +212,74 @@ MonoBehaviour:
   ground: {fileID: 343012245349947211}
   sprite: {fileID: 7588718041217758282}
   animator: {fileID: 4978346973153815736}
+  groundedDodge:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.043128353
+      outSlope: -0.043128353
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.10927153
+    - serializedVersion: 3
+      time: 0.5
+      value: 0.5
+      inSlope: -1.978905
+      outSlope: -1.978905
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06953645
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  groundDodgeSpeed: 30
+  airDodge:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3
+      value: 0
+      inSlope: -0
+      outSlope: 0.625
+      tangentMode: 5
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4
+      value: 1
+      inSlope: 0.9058435
+      outSlope: 0
+      tangentMode: 65
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  airDodgeSpeed: 50
 --- !u!114 &5260555565163430220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,6 +405,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  gravity: 20
 --- !u!114 &343012245349947211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,7 +507,7 @@ SpriteRenderer:
   m_SortingLayerID: -2111165403
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6738833921905959984, guid: 1982ddf2f8a80fc49857d25c55b33cf0, type: 3}
+  m_Sprite: {fileID: -1767038317537625564, guid: 1982ddf2f8a80fc49857d25c55b33cf0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

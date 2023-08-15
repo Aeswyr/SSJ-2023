@@ -15,4 +15,8 @@ public class DestroyAfterDelay : MonoBehaviour
         if (Time.time > lifetime)
             Destroy(this.gameObject);
     }
+
+    public void Init(float val) {
+        this.lifetime = val;
+    }
 }

@@ -10,13 +10,17 @@ public class MovementHandler : MonoBehaviour
     private float accelerationTime;
     [SerializeField] private AnimationCurve decelerationCurve;
     private float decelerationTime;
+    private AnimationCurve currentCurve;
+    private float currentSpeed;
+    private float curveTime;
     private float timestamp;
     private float dir;
-    private float decelSpeed;
     bool moving = false;
-    // Update is called once per frame
 
-
+    bool paused;
+    float pausedUntil;
+    float pauseStarted;
+    float storedVelocity;
     void Awake() {
         accelerationTime = accelerationCurve[accelerationCurve.length - 1].time;
         decelerationTime = decelerationCurve[decelerationCurve.length - 1].time;
@@ -24,28 +28,44 @@ public class MovementHandler : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Time.time < pausedUntil)
+            return;
+
+        if (paused) {
+            paused = false;
+            rbody.velocity = new Vector2(storedVelocity, rbody.velocity.y);
+            timestamp += pausedUntil - pauseStarted;
+        }
+
         if (Time.time < timestamp) {
-            if (moving)
-                rbody.velocity = new Vector2(speed * dir * accelerationCurve.Evaluate(Time.time - timestamp + accelerationTime), rbody.velocity.y);
-            else
-                rbody.velocity = new Vector2(decelSpeed * dir * decelerationCurve.Evaluate(Time.time - timestamp + decelerationTime), rbody.velocity.y);
+            rbody.velocity = new Vector2(currentSpeed * dir * currentCurve.Evaluate(Time.time - timestamp + curveTime), rbody.velocity.y);
+        } else if (moving) {
+            rbody.velocity = new Vector2(speed * dir, rbody.velocity.y);
         } else {
-            if (moving)
-                rbody.velocity = new Vector2(speed * dir, rbody.velocity.y);
+            rbody.velocity = rbody.velocity.y * Vector2.up;
         }
     }
 
     public void StartDeceleration() {
         moving = false;
-        timestamp = Time.time + decelerationTime;
-        decelSpeed = speed;
-        if (Mathf.Abs(rbody.velocity.x) < decelSpeed)
-            decelSpeed = Mathf.Abs(rbody.velocity.x);
+
+        currentCurve = decelerationCurve;
+        curveTime = decelerationTime;
+        currentSpeed = speed;
+        if (Mathf.Abs(rbody.velocity.x) < currentSpeed)
+            currentSpeed = Mathf.Abs(rbody.velocity.x);
+
+        timestamp = Time.time + curveTime;
     }
 
     public void StartAcceleration(float dir) {
         moving = true;
-        timestamp = Time.time + accelerationTime;
+        
+        currentCurve = accelerationCurve;
+        curveTime = accelerationTime;
+        currentSpeed = speed;
+
+        timestamp = Time.time + curveTime;
     }
 
     public void UpdateMovement(float dir) {
@@ -53,8 +73,37 @@ public class MovementHandler : MonoBehaviour
         moving = true;
     }
 
+    public void OverrideCurve(float speed, AnimationCurve curve, float dir) {
+        moving = true;
+        this.dir = dir;
+        
+        currentCurve = curve;
+        curveTime = curve[curve.length - 1].time;
+        currentSpeed = speed;
 
-    
+        timestamp = Time.time + curveTime;
+    }
 
+    public void ForceStop() {
+        moving = false;
+        timestamp = 0;
+        rbody.velocity = rbody.velocity.y * Vector2.up;
+    }
 
+    public void ResetCurves() {
+        currentSpeed = speed;
+    }
+
+    public void Pause(float endPause) {
+        if (paused) {
+            if (endPause > pausedUntil)
+                pausedUntil = endPause;
+        } else {
+            paused = true;
+            pauseStarted = Time.time;
+            pausedUntil = endPause;
+            storedVelocity = rbody.velocity.x;
+            rbody.velocity = new Vector2(0, rbody.velocity.y);
+        }
+    }
 }

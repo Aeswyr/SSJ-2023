@@ -16,7 +16,11 @@ public class JumpHandler : MonoBehaviour
     private bool jumping, starting;
     private AnimationCurve curve;
     private float risingTime, fallingTime, maxTime;
-
+    bool paused;
+    float pausedUntil;
+    float pauseStarted;
+    float storedVelocity;
+    [SerializeField] private float gravity;
     void Start() {
         risingTime = risingCurve[risingCurve.length - 1].time;
         fallingTime = fallingCurve[fallingCurve.length - 1].time;
@@ -24,6 +28,16 @@ public class JumpHandler : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Time.time < pausedUntil)
+            return;
+
+        if (paused) {
+            paused = false;
+            rbody.velocity = new Vector2(rbody.velocity.x, storedVelocity);
+            timeStamp += pausedUntil - pauseStarted;
+            rbody.gravityScale = gravity;
+        }
+
         if (starting && (InputHandler.Instance.jump.released || Time.time - timeStamp > risingTime))
             EndJump();
         if (Time.time - timeStamp <= maxTime)     
@@ -52,4 +66,31 @@ public class JumpHandler : MonoBehaviour
         timeStamp = -100;
     }
 
+    public void Pause(float endPause) {
+        if (paused) {
+            if (endPause > pausedUntil)
+                pausedUntil = endPause;
+        } else {
+            paused = true;
+            pauseStarted = Time.time;
+            pausedUntil = endPause;
+            storedVelocity = rbody.velocity.y;
+            rbody.velocity = new Vector2(rbody.velocity.x, 0);
+            rbody.gravityScale = 0;
+        }
+    }
+
+    public void SetGravity(float val, bool freezeMomentum = false) {
+        rbody.gravityScale = val;
+        if (freezeMomentum) {
+            starting = false;
+            timeStamp = -100;
+            rbody.velocity = new Vector2(rbody.velocity.x, 0);
+        }
+
+    }
+
+    public void ResetGravity() {
+        rbody.gravityScale = gravity;
+    }
 }
