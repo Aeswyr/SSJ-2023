@@ -48,3 +48,4 @@ MonoBehaviour:
   vfxList:
   - {fileID: 3106177128832264852, guid: 88d32e6739a580044a8425c14df943b2, type: 3}
   - {fileID: 7002086396937686785, guid: a4192b8f50909794dabf71eca21ae698, type: 3}
+  - {fileID: 8418769419502930608, guid: 6f1ccc1125e47154cb605d1534e1086e, type: 3}

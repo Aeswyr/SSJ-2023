@@ -12,7 +12,7 @@ public class VFXManager : Singleton<VFXManager>
         cameraPos = Camera.main.transform.position;
     }
     
-    public void VFXBuilder(VFXType type, Vector3 position = default, bool destroyOnExpire = true, string layer = "VFX", bool flipX = false) {
+    public void VFXBuilder(VFXType type, Vector3 position = default, bool destroyOnExpire = true, string layer = "vfx", bool flipX = false) {
         GameObject particle = Instantiate(vfxTemplate, position, Quaternion.identity);
 
         var animator = particle.GetComponent<Animator>();
@@ -48,6 +48,6 @@ public class VFXManager : Singleton<VFXManager>
     }
 
     public enum VFXType {
-        DEFAULT, AIRDASH_PAD, JUMP_PAD,
+        DEFAULT, AIRDASH_PAD, JUMP_PAD, GUN_BLAST,
     }
 }

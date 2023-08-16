@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AnimationCurve airDodge;
     [SerializeField] private float airDodgeSpeed;
 
+    [Header("Attack Data")]
+    [SerializeField] private AnimationCurve attackCurve;
+    [SerializeField] private GameObject attackPrefab;
+
     private bool grounded, lastGrounded;
     private bool acting;
     private bool canAirdodge;
@@ -55,7 +59,7 @@ public class PlayerController : MonoBehaviour
 
         if (((!acting  && grounded) || canJumpCancel) && InputHandler.Instance.jump.pressed) {
             if (canJumpCancel) {
-                VFXManager.Instance.VFXBuilder(VFXManager.VFXType.JUMP_PAD, transform.position, flipX: sprite.flipX);
+                VFXManager.Instance.VFXBuilder(VFXManager.VFXType.JUMP_PAD, transform.position, layer: "entity_fx", flipX: sprite.flipX);
                 EndAction();
             }
             jump.StartJump();
@@ -70,13 +74,13 @@ public class PlayerController : MonoBehaviour
             int dir = sprite.flipX ? -1 : 1;
             if (InputHandler.Instance.dir != 0)
                 dir = (int)InputHandler.Instance.dir;
-            if (InputHandler.Instance.dir == 0) {
+            if (grounded && !InputHandler.Instance.move.down) {
                 // P A R R Y
             } else if (grounded) {
                 move.OverrideCurve(groundDodgeSpeed, groundedDodge, dir);
                 animator.SetTrigger("dodge");
             } else {
-                VFXManager.Instance.VFXBuilder(VFXManager.VFXType.AIRDASH_PAD, transform.position, flipX: sprite.flipX);
+                VFXManager.Instance.VFXBuilder(VFXManager.VFXType.AIRDASH_PAD, transform.position, layer: "entity_fx", flipX: sprite.flipX);
                 canJumpCancel = true;
                 canAirdodge = false;
                 jump.SetGravity(0, true);
@@ -90,7 +94,8 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("drink");
         } else if (!acting && InputHandler.Instance.primary.pressed) {
             StartAction();
-            // ATTACK
+            move.StartDeceleration();
+            animator.SetTrigger("attack");
         } else if (!acting && InputHandler.Instance.secondary.pressed) {
             StartAction();
             // THROW
@@ -99,6 +104,13 @@ public class PlayerController : MonoBehaviour
 
 
         animator.SetBool("grounded", grounded);
+    }
+
+    private void TriggerAttack() {
+        int dir = sprite.flipX ? -1 : 1;
+        move.OverrideCurve(20 * -1, attackCurve, dir);
+
+        VFXManager.Instance.VFXBuilder(VFXManager.VFXType.GUN_BLAST, transform.position + (4 * dir * Vector3.right) + (4 * Vector3.down), flipX: sprite.flipX);
     }
 
     private void StartAction() {

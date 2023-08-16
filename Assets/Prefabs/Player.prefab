@@ -280,6 +280,31 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   airDodgeSpeed: 50
+  attackCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -8.204251
+      outSlope: -8.204251
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.03510712
+    - serializedVersion: 3
+      time: 0.4008545
+      value: 0
+      inSlope: -0.02099523
+      outSlope: -0.02099523
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.11199629
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  attackPrefab: {fileID: 0}
 --- !u!114 &5260555565163430220
 MonoBehaviour:
   m_ObjectHideFlags: 0

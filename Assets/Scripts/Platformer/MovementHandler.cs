@@ -92,6 +92,7 @@ public class MovementHandler : MonoBehaviour
 
     public void ResetCurves() {
         currentSpeed = speed;
+        timestamp = 0;
     }
 
     public void Pause(float endPause) {
