@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
         int dir = sprite.flipX ? -1 : 1;
         move.OverrideCurve(20 * -1, attackCurve, dir);
 
-        VFXManager.Instance.VFXBuilder(VFXManager.VFXType.GUN_BLAST, transform.position + (4 * dir * Vector3.right) + (4 * Vector3.down), flipX: sprite.flipX);
+        VFXManager.Instance.VFXBuilder(VFXManager.VFXType.GUN_BLAST, transform.position + (7 * dir * Vector3.right), flipX: sprite.flipX);
     }
 
     private void StartAction() {

@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: vfx_explosion_Frame_1
     originalName: 
-    pivot: {x: 0.102564104, y: -0.37931037}
+    pivot: {x: 0.75, y: -0.5294118}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 94
-      y: 4
-      width: 78
-      height: 58
+      x: 68
+      y: 39
+      width: 44
+      height: 17
     spriteID: 42a4c36f74fc4344c8443364fa78498f
     spriteBone: []
     spriteOutline: []
@@ -138,18 +138,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 94, y: 4}
+    uvTransform: {x: 68, y: 39}
   - name: vfx_explosion_Frame_2
     originalName: 
-    pivot: {x: -0.024390243, y: -0.4237288}
+    pivot: {x: 0.42372882, y: -0.4347826}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 127
       y: 4
-      width: 82
-      height: 59
+      width: 59
+      height: 23
     spriteID: 7027ce09249f0fa4d8b7ce2db8929846
     spriteBone: []
     spriteOutline: []
@@ -158,18 +158,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 127, y: 4}
   - name: vfx_explosion_Frame_0
     originalName: 
-    pivot: {x: 0.25, y: -1.64}
+    pivot: {x: 0.375, y: -0.22222222}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 140
+      y: 4
       width: 56
-      height: 25
+      height: 27
     spriteID: e2f31d75039041b4d94ff71ce674abe6
     spriteBone: []
     spriteOutline: []
@@ -178,18 +178,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 140}
+    uvTransform: {x: 4, y: 4}
   - name: vfx_explosion_Frame_3
     originalName: 
-    pivot: {x: -0.102564104, y: -0.37704918}
+    pivot: {x: 0.31372547, y: -0.22222222}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 71
-      width: 78
-      height: 61
+      x: 68
+      y: 4
+      width: 51
+      height: 27
     spriteID: 5d546e04ec023154db18404bcc7037ea
     spriteBone: []
     spriteOutline: []
@@ -198,18 +198,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 71}
+    uvTransform: {x: 68, y: 4}
   - name: vfx_explosion_Frame_4
     originalName: 
-    pivot: {x: -0.3018868, y: -0.6956522}
+    pivot: {x: 0.33333337, y: -0.2962963}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 180
+      x: 194
       y: 4
-      width: 53
-      height: 46
+      width: 42
+      height: 27
     spriteID: 2fc3b7b8307000547a55aaa3ade58bc9
     spriteBone: []
     spriteOutline: []
@@ -218,18 +218,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 180, y: 4}
+    uvTransform: {x: 194, y: 4}
   - name: vfx_explosion_Frame_5
     originalName: 
-    pivot: {x: -0.42857143, y: -1.0238096}
+    pivot: {x: 0.35483873, y: -0.9473684}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 90
-      y: 71
-      width: 49
-      height: 42
+      x: 4
+      y: 39
+      width: 31
+      height: 19
     spriteID: 789cdbdea7c1a4142aa9ac9001a81705
     spriteBone: []
     spriteOutline: []
@@ -238,18 +238,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 90, y: 71}
+    uvTransform: {x: 4, y: 39}
   - name: vfx_explosion_Frame_6
     originalName: 
-    pivot: {x: -0.5106383, y: -1.1750001}
+    pivot: {x: 0.23076923, y: -2.4545455}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 147
-      y: 71
-      width: 47
-      height: 40
+      x: 194
+      y: 39
+      width: 26
+      height: 11
     spriteID: 53e5fca1f2a95cd41b309ee14b777add
     spriteBone: []
     spriteOutline: []
@@ -258,18 +258,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 147, y: 71}
+    uvTransform: {x: 194, y: 39}
   - name: vfx_explosion_Frame_7
     originalName: 
-    pivot: {x: -0.64285713, y: -1.8709677}
+    pivot: {x: -0.052631676, y: -6.6000004}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 202
-      y: 71
-      width: 42
-      height: 31
+      x: 228
+      y: 39
+      width: 19
+      height: 5
     spriteID: f41deaa6985f90c4d9aa7c85ea69834c
     spriteBone: []
     spriteOutline: []
@@ -278,7 +278,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 202, y: 71}
+    uvTransform: {x: 228, y: 39}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -288,69 +288,69 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: vfx_explosion_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 120
-        y: 22
-        width: 78
-        height: 58
-      spriteId: 42a4c36f74fc4344c8443364fa78498f
-    - name: vfx_explosion_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 130
-        y: 25
-        width: 82
-        height: 59
-      spriteId: 7027ce09249f0fa4d8b7ce2db8929846
     - name: vfx_explosion_Frame_0
       frameIndex: 0
       cellRect:
-        x: 114
-        y: 41
+        x: 15
+        y: 9
+        width: 44
+        height: 17
+      spriteId: 42a4c36f74fc4344c8443364fa78498f
+    - name: vfx_explosion_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 23
+        y: 10
+        width: 59
+        height: 23
+      spriteId: 7027ce09249f0fa4d8b7ce2db8929846
+    - name: vfx_explosion_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 27
+        y: 6
         width: 56
-        height: 25
+        height: 27
       spriteId: e2f31d75039041b4d94ff71ce674abe6
     - name: vfx_explosion_Frame_3
       frameIndex: 3
       cellRect:
-        x: 136
-        y: 23
-        width: 78
-        height: 61
+        x: 32
+        y: 6
+        width: 51
+        height: 27
       spriteId: 5d546e04ec023154db18404bcc7037ea
     - name: vfx_explosion_Frame_4
       frameIndex: 4
       cellRect:
-        x: 144
-        y: 32
-        width: 53
-        height: 46
+        x: 34
+        y: 8
+        width: 42
+        height: 27
       spriteId: 2fc3b7b8307000547a55aaa3ade58bc9
     - name: vfx_explosion_Frame_5
       frameIndex: 5
       cellRect:
-        x: 149
-        y: 43
-        width: 49
-        height: 42
+        x: 37
+        y: 18
+        width: 31
+        height: 19
       spriteId: 789cdbdea7c1a4142aa9ac9001a81705
     - name: vfx_explosion_Frame_6
       frameIndex: 6
       cellRect:
-        x: 152
-        y: 47
-        width: 47
-        height: 40
+        x: 42
+        y: 27
+        width: 26
+        height: 11
       spriteId: 53e5fca1f2a95cd41b309ee14b777add
     - name: vfx_explosion_Frame_7
       frameIndex: 7
       cellRect:
-        x: 155
-        y: 58
-        width: 42
-        height: 31
+        x: 49
+        y: 33
+        width: 19
+        height: 5
       spriteId: f41deaa6985f90c4d9aa7c85ea69834c
     linkedCells: []
     parentIndex: -1
@@ -393,4 +393,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 256, y: 96}
+  canvasSize: {x: 96, y: 48}

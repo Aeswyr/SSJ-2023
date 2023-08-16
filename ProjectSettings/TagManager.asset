@@ -44,6 +44,9 @@ TagManager:
   - name: background
     uniqueID: 1121108449
     locked: 0
+  - name: entity_fx
+    uniqueID: 2093287831
+    locked: 0
   - name: entity
     uniqueID: 2183801893
     locked: 0
