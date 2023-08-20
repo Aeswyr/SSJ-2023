@@ -202,6 +202,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 3cebbfbf-f115-40ef-b6a6-3d5d1f5ba805
     m_ActionName: PlayerActions/Drink[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -6288873498336874659}
+        m_TargetAssemblyTypeName: InputHandler, Assembly-CSharp
+        m_MethodName: Down
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2d594fd0-8ecd-4688-a80c-a00a2725e244
+    m_ActionName: PlayerActions/Down[/Keyboard/s]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Mouse+Keyboard
   m_DefaultActionMap: PlayerActions
@@ -219,6 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cffbc8a829093944eb9b09c9cac0cbbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonCount: 9
+  buttonCount: 10
   bufferFrames: 5
   bufferEnabled: 1

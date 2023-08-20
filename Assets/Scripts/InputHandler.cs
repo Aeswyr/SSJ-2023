@@ -30,11 +30,14 @@ public class InputHandler : Singleton<InputHandler>
     public ButtonState menu {
         get {return buttons[6];}
     }
-    public ButtonState drink {
+    public ButtonState down {
         get {return buttons[7];}
     }
-    public ButtonState any {
+    public ButtonState drink {
         get {return buttons[8];}
+    }
+    public ButtonState any {
+        get {return buttons[9];}
     }
 
     [SerializeField] private int buttonCount = 1;
@@ -89,12 +92,16 @@ public class InputHandler : Singleton<InputHandler>
         this.buttons[6].Set(ctx);
     }
 
-    public void Drink(InputAction.CallbackContext ctx) {
+    public void Down(InputAction.CallbackContext ctx) {
         this.buttons[7].Set(ctx);
     }
 
-    public void Any(InputAction.CallbackContext ctx) {
+    public void Drink(InputAction.CallbackContext ctx) {
         this.buttons[8].Set(ctx);
+    }
+
+    public void Any(InputAction.CallbackContext ctx) {
+        this.buttons[9].Set(ctx);
     }
 
     public void FlushBuffer() {

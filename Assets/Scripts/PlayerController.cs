@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AnimationCurve attackCurve;
     [SerializeField] private GameObject attackPrefab;
 
+    [Header("Potion Data")]
+    [SerializeField] private GameObject potionPrefab;
+
     private bool grounded, lastGrounded;
     private bool acting;
     private bool canAirdodge;
@@ -74,9 +77,7 @@ public class PlayerController : MonoBehaviour
             int dir = sprite.flipX ? -1 : 1;
             if (InputHandler.Instance.dir != 0)
                 dir = (int)InputHandler.Instance.dir;
-            if (grounded && !InputHandler.Instance.move.down) {
-                // P A R R Y
-            } else if (grounded) {
+            if (grounded) {
                 move.OverrideCurve(groundDodgeSpeed, groundedDodge, dir);
                 animator.SetTrigger("dodge");
             } else {
@@ -87,19 +88,25 @@ public class PlayerController : MonoBehaviour
                 move.OverrideCurve(airDodgeSpeed, airDodge, dir);
                 animator.SetTrigger("dodge");
             }
-            
-        } else if (!acting && grounded && InputHandler.Instance.drink.pressed) {
-            StartAction();
-            move.StartDeceleration();
-            animator.SetTrigger("drink");
         } else if (!acting && InputHandler.Instance.primary.pressed) {
             StartAction();
             move.StartDeceleration();
             animator.SetTrigger("attack");
         } else if (!acting && InputHandler.Instance.secondary.pressed) {
             StartAction();
-            // THROW
+            if (grounded)
+                move.StartDeceleration();
+            if (grounded && InputHandler.Instance.down.down) {
+                animator.SetTrigger("parry");
+            } else {
+                animator.SetTrigger("throw");
+            }
+        } else if (!acting && grounded && InputHandler.Instance.drink.pressed) {
+            StartAction();
+            move.StartDeceleration();
+            animator.SetTrigger("drink");
         }
+
 
 
 
@@ -126,5 +133,27 @@ public class PlayerController : MonoBehaviour
         if (!InputHandler.Instance.move.down)
             move.StartDeceleration();
         jump.ResetGravity();        
+    }
+
+    private void EndParry() {
+
+    }
+
+    private void PotionToss() {
+        int dir = sprite.flipX ? -1 : 1;
+        var potion = Instantiate(potionPrefab, transform.position + 3 * dir * Vector3.right + Vector3.up, Quaternion.identity);
+        potion.GetComponent<Rigidbody2D>().velocity = new Vector2(dir * 5, 25);
+    }
+
+    private void PotionThrow() {
+        int dir = sprite.flipX ? -1 : 1;
+        var potion = Instantiate(potionPrefab, transform.position + 1 * dir * Vector3.right + Vector3.up, Quaternion.identity);
+        potion.GetComponent<Rigidbody2D>().velocity = new Vector2(dir * 40, 10);
+    }
+
+    private void PotionDrop() {
+        int dir = sprite.flipX ? -1 : 1;
+        var potion = Instantiate(potionPrefab, transform.position + dir * Vector3.right, Quaternion.identity);
+        potion.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
     }
 }

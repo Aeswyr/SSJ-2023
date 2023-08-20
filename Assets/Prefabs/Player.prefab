@@ -305,6 +305,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   attackPrefab: {fileID: 0}
+  potionPrefab: {fileID: 3094280434391255241, guid: 7b2dee238a0a9e1429bb4812faa4f8f4, type: 3}
 --- !u!114 &5260555565163430220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,7 +531,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2111165403
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1767038317537625564, guid: 1982ddf2f8a80fc49857d25c55b33cf0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
